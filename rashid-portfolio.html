@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rashid Ishimwe — Portfolio</title>
+  <meta name="description" content="Portfolio of Rashid Ishimwe — Business student at UNLV, customer service specialist, multilingual." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='50'%3E%F0%9F%8C%9F%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root{
+      --bg: #0b0d10;
+      --panel: rgba(255,255,255,.06);
+      --panel-2: rgba(255,255,255,.08);
+      --accent: #00d4ff;
+      --accent-2: #7c4dff;
+      --text: #eaf2ff;
+      --muted: #aeb8c4;
+      --ring: rgba(0,212,255,.35);
+      --radius: 20px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 600px at -10% 10%, rgba(124,77,255,.25), transparent 60%),
+        radial-gradient(1000px 800px at 110% -10%, rgba(0,212,255,.25), transparent 55%),
+        linear-gradient(180deg, #0b0d10 0%, #0b0d10 100%);
+      overflow-x:hidden;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      position:relative;
+      padding:72px 24px 56px;
+      text-align:center;
+    }
+    .badge{
+      display:inline-flex; gap:.5rem; align-items:center;
+      padding:.5rem .8rem; border-radius:999px;
+      background:var(--panel);
+      border:1px solid var(--panel-2);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 0 0 6px var(--ring);
+      font-size:.9rem; color: var(--muted);
+      transform: translateZ(0);
+    }
+    .title{
+      margin:16px auto 10px;
+      font-size:min(8vw,48px);
+      line-height:1.05;
+      letter-spacing:.3px;
+      background:linear-gradient(90deg,var(--text),#b8e6ff);
+      -webkit-background-clip:text; background-clip:text;
+      color:transparent;
+    }
+    .subtitle{margin:0 auto 16px; color:var(--muted); font-size:1.05rem}
+    .cta{
+      margin-top:18px; display:inline-flex; gap:12px
+    }
+    .btn{
+      padding:12px 18px; border-radius:14px; border:1px solid var(--panel-2);
+      background: linear-gradient(180deg, var(--panel), rgba(255,255,255,.02));
+      color:var(--text); font-weight:600; letter-spacing:.2px;
+      box-shadow: 0 10px 24px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.08);
+      transition: transform .15s ease, box-shadow .2s ease;
+    }
+    .btn:hover{transform: translateY(-2px)}
+    main{max-width:1000px; margin: 0 auto; padding: 0 20px 64px}
+    .grid{
+      display:grid; gap:18px; grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    }
+    .card{
+      padding:20px 18px; border-radius: var(--radius);
+      background: var(--panel);
+      border:1px solid var(--panel-2);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 10px 24px rgba(0,0,0,.45);
+      transition: transform .2s ease, border-color .2s ease;
+    }
+    .card:hover{ transform: translateY(-4px); border-color: rgba(124,77,255,.45) }
+    h2{margin:0 0 8px; font-size:1.25rem}
+    .muted{color:var(--muted); margin:0}
+    ul{margin:12px 0 0 18px}
+    li{margin:.35rem 0}
+    .pill{
+      display:inline-block; padding:6px 10px; margin:6px 6px 0 0;
+      border-radius:999px; background:rgba(255,255,255,.07); border:1px solid var(--panel-2);
+      font-size:.9rem; color:var(--muted)
+    }
+    footer{ text-align:center; color:var(--muted); padding: 16px 0 42px }
+    /* Subtle floating glow behind header */
+    .glow{
+      position:absolute; inset:-40px 0 auto; height:260px; pointer-events:none;
+      background: radial-gradient(600px 180px at 50% 100%, rgba(124,77,255,.25), transparent 70%);
+      filter: blur(30px);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="glow"></div>
+    <span class="badge">✨ Designed to stand out</span>
+    <h1 class="title">Rashid Ishimwe</h1>
+    <p class="subtitle">Business Student @ UNLV · Customer Service · Multilingual (English, Swahili, Kinyarwanda)</p>
+    <div class="cta">
+      <a class="btn" href="mailto:Rashidishimwelilluv@gmail.com">Email Me</a>
+      <a class="btn" href="tel:+17022725489">Call: 702‑272‑5489</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid">
+      <section class="card">
+        <h2>About Me</h2>
+        <p class="muted">Motivated and hardworking business student at UNLV with a strong background in customer service, teamwork, and problem-solving. Experienced in retail, food service, and volunteer roles. I thrive in diverse and fast‑paced environments and I’m committed to excellence.</p>
+      </section>
+
+      <section class="card">
+        <h2>Key Skills</h2>
+        <div>
+          <span class="pill">Customer Service</span>
+          <span class="pill">Time Management</span>
+          <span class="pill">Corporate Communications</span>
+          <span class="pill">Problem Solving</span>
+          <span class="pill">Attention to Detail</span>
+          <span class="pill">English · Swahili · Kinyarwanda</span>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Experience</h2>
+        <ul>
+          <li><strong>Walmart</strong> — Seasonal Associate (Jun 2023 – Present)<br><span class="muted">Assist customers, organize and stock inventory, support promotions and store goals.</span></li>
+          <li><strong>Chick‑fil‑A</strong> — Back House (Jan 2022 – Sept 2023)<br><span class="muted">Built orders fast and accurately, ensured operational efficiency, trained new team members.</span></li>
+          <li><strong>American Stitch</strong> — Volunteer (Apr 2021 – Dec 2021)<br><span class="muted">Organized and packaged face masks during the pandemic; stocked inventory.</span></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Education</h2>
+        <ul>
+          <li><strong>University of Nevada, Las Vegas</strong> — Business Major (Aug 2022 – Present)</li>
+          <li><strong>Valley High School</strong> — Advanced Diploma (Jan 2018 – Jun 2022)<br><span class="muted">GPA 3.7 · Top 9% of class</span></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Awards & Activities</h2>
+        <ul>
+          <li>Jobs for Nevada’s Graduates (J4NG) — Member</li>
+          <li>Perfect Attendance</li>
+          <li>Straight‑A Honors</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Contact</h2>
+        <p class="muted">Las Vegas, NV · <a href="mailto:Rashidishimwelilluv@gmail.com">Rashidishimwelilluv@gmail.com</a> · 702‑272‑5489</p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Rashid Ishimwe — Built with ♥ to stand out
+  </footer>
+</body>
+</html>
